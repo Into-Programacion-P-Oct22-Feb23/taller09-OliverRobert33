@@ -7,7 +7,8 @@ package paquete1;
 
 /**
  *
- * @author reroes
+ * @author Ruben Condoy
+ *         Oliver Saraguro
  */
 public class Ejercicio01 {
 
@@ -24,22 +25,22 @@ public class Ejercicio01 {
         int[] valoresRangos = new int[4]; // {0, 0, 0, 0}
         int respuesta;
         
-        for (int i = 0; i < respuestas.length; i++) { 
+        for (int i = 0; i < respuestas.length; i++) { //Existen 14 elementos
             respuesta = respuestas[i]; 
                     
-            if ((respuesta >= 1) || (respuesta <=5)){
+            if ((respuesta >= 1) && (respuesta <=5)){ // Sel cambio el OR por el AND
                 valoresRangos[0] = valoresRangos[0] + 1;
                 
             }else{
                     
-                if ((respuesta >= 6) || (respuesta <=10)){
+                if ((respuesta >= 6) &&  (respuesta <=10)){ // Sel cambio el OR por el AND
                     valoresRangos[1] = valoresRangos[1] + 1;
                 }else{
                             
-                    if ((respuesta >= 11) || (respuesta <=15)){
+                    if ((respuesta >= 11) && (respuesta <=15)){ // Sel cambio el OR por el AND
                         valoresRangos[2] = valoresRangos[2] + 1; //3+1 
                     }else{
-                        if ((respuesta >= 16) || (respuesta <=20)){
+                        if ((respuesta >= 16) && (respuesta <=20)){ // Sel cambio el OR por el AND
                             valoresRangos[3] = valoresRangos[3] + 1;//1+1
                         }
                     
@@ -50,7 +51,7 @@ public class Ejercicio01 {
         }
         
         
-        for (int i = 0; i < rangos.length; i++) {
+        for (int i = 0; i < rangos.length; i++) { //4 elementos
             System.out.printf("Rango %s - valor %d\n", rangos[i],
                     valoresRangos[i]);
         }
@@ -58,3 +59,10 @@ public class Ejercicio01 {
     }
     
 }
+/*
+Esto deberia presentar en pantalla:
+Rango 1-5 - valor 1
+Rango 6-10 - valor 4
+Rango 11-15 - valor 4
+Rango 16-20 - valor 5
+*/

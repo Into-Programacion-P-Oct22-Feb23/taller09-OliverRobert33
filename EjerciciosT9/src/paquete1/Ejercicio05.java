@@ -29,12 +29,23 @@ public class Ejercicio05 {
         String inicial;
         char inicialLetra;
         boolean bandera = true;
+        
         while (bandera) {
             System.out.println("Ingrese una letra");
             inicial = entrada.nextLine();
-            
-        }
-
+            for (int i = 0; i < estudiantes.length; i++) {
+                inicialLetra= estudiantes[i].charAt(0);
+                String inicialDos = String.valueOf(inicialLetra);
+                if (inicial.equals(inicialDos))
+                    bandera=false;
+            }
+                
+            }
+       
     }
 
 }
+
+// si es que la letra es la segunda no sale del ciclo
+// pero si ingresa la primera letra del nombre, entonces sale del ciclo
+// interesante..

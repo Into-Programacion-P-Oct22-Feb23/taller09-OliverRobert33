@@ -1,3 +1,6 @@
+Nombres: Oliver Saraguro 
+        - Ruben Condoy
+
 # Taller 9 (Laboratorio)
 ## Construcción de programas usando arreglos unidimensionales
 
